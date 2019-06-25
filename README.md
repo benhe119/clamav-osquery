@@ -3,7 +3,7 @@ This extension integrates ClamAV into osquery. Currently this extenion only supp
 
 ## Build
 
-This extension currently needs to be built manually and requires libclamav, prebuilt binaries will be provided at a later time. It can be built using the buildsystem from osql
+This extension currently needs to be built manually and requires libclamav, prebuilt binaries will be provided at a later time. It can be built using the buildsystem from osql  
 Steps to build:
 + Download the source code for osql, https://github.com/osql/osql
  ```
@@ -21,7 +21,7 @@ Steps to build:
 
 ## Usage
 
-Osquery needs to run as root when executing the ClamAV extension. When first executed the extension will attempt to download the official clamav databases from database.clamav.net. The databases will be downloaded to /usr/lib/osquery/extensions/clamav/clamdbs/
+Osquery needs to run as root when executing the ClamAV extension. When first executed the extension will attempt to download the official clamav databases from database.clamav.net. The databases will be downloaded to /usr/lib/osquery/extensions/clamav/clamdbs/  
 The config.json controls several settings of the extension:
 + url: Url to download ClamAV databases. Right now the extension is hardcoded to download main.cvd, daily.cvd, and bytecode.cvd
 + port: Port to connect to the url
