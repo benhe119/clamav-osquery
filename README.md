@@ -16,15 +16,15 @@ Steps to build:
 + Move extension_clamav to osql/external
 + Run make sysprep, make deps, make. Further explanation can be found at https://osquery.readthedocs.io
 + Make root the owner of the extension
-+ Place the extension at /usr/lib/osquery/extensions/clamav/
 + Place config.json at /usr/lib/osquery/extensions/clamav/
++ Optionally, place the compiled extension, clamav_ext.ext, at /usr/lib/osquery/extensions/clamav/
 
 ## Usage
 
 Osquery needs to run as root when executing the ClamAV extension. When first executed the extension will attempt to download the official clamav databases from database.clamav.net. The databases will be downloaded to /usr/lib/osquery/extensions/clamav/clamdbs/  
-The config.json controls several settings of the extension:
-+ url: Url to download ClamAV databases. Right now the extension is hardcoded to download main.cvd, daily.cvd, and bytecode.cvd
-+ port: Port to connect to the url
+The config.json file controls several settings of the extension:
++ url: Url to download ClamAV databases. Right now the extension is hardcoded to download main.cvd, daily.cvd, and bytecode.cvd.
++ port: Port to connect to the url.
 + time: How often the extensiono should update the ClamAV databases. By default the extension will update the databases every 7 days
 + update: Whether the extension should update databases. Set it to false to disable updates.
 
