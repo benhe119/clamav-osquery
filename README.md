@@ -26,7 +26,8 @@ The config.json file controls several settings of the extension:
 + url: Url to download ClamAV databases. Right now the extension is hardcoded to download main.cvd, daily.cvd, and bytecode.cvd.
 + port: Port to connect to the url.
 + time: How often the extensiono should update the ClamAV databases. By default the extension will update the databases every 7 days.
-+ update: Whether the extension should update databases. Set it to false to disable updates.
++ update: Whether the extension should update databases. Set it to false to disable updates.  
+When executed the extension will load the ClamAV databases into memory, this will cause the extension to use a large amount of RAM ~680MB. Once the extension is done executing it releases the databases from memory.
 
 This extension has been tested on: 
 + Debian 9 (Stretch)
