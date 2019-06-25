@@ -27,6 +27,7 @@ The config.json file controls several settings of the extension:
 + port: Port to connect to the url.
 + time: How often the extensiono should update the ClamAV databases. By default the extension will update the databases every 7 days.
 + update: Whether the extension should update databases. Set it to false to disable updates.  
+
 When executed the extension will load the ClamAV databases into memory, this will cause the extension to use a large amount of RAM ~680MB. Once the extension is done executing it releases the databases from memory.
 
 This extension has been tested on: 
